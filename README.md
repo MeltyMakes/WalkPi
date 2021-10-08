@@ -277,16 +277,3 @@ def lipopi_setup():
 	
     ...
 ```
-
-# Pinmap
-Lipopi - 14 15 18
-Mopidy - 17 22 27 **Needs 2 more for roten**
-DAC - ???
-Screen - ???
-
-
-# TODO
-
-- Fix play pause
-- BT info
-- Display toggle switch - you can control thru software
