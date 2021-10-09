@@ -17,12 +17,6 @@ WalkPi Player is my attempt at turning a [Raspberry Pi Zero W](https://www.raspb
 - When I couldn't get info out of the docs, someone in the [Mopidy Discourse](https://discourse.mopidy.com/) probably had helpful info.
 
 
-
-# Design and Planning
-
-me kronk me do thinky
-
-
 # Preparing the Pi
 Download the latest version of [Raspbian Lite](https://www.raspberrypi.org/software/operating-systems/) and flash it to your SD card. I used [Balena Etcher](https://www.balena.io/etcher/) which is recommended by the Raspberry Pi foundation.
 
