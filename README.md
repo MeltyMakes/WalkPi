@@ -2,6 +2,8 @@
 
 WalkPi Player is my attempt at turning a [Raspberry Pi Zero W](https://www.raspberrypi.org/pi-zero-w/) into a portable hi-fi audio solution, taking inspiration from the [Sony Walkman TPS-L2](https://en.wikipedia.org/wiki/Walkman#/media/File:Original_Sony_Walkman_TPS-L2.JPG).
 
+# TO-DOs
+- Make a buildroot version so this doesn't take 2mins to boot up
 
 # Disclaimers, Resources, and Thanks
 
