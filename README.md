@@ -145,6 +145,7 @@ We can now get some plugins to extend the functionality of Mopidy.
 - [Mopidy-Local](https://github.com/mopidy/mopidy-local) Lets you play files stored locally
 - [Mopidy-Iris](https://github.com/jaedb/iris) Popular web frontend for mopidy, we'll use it for testing the electronics
 - [Mopidy-Raspberry-GPIO](https://github.com/pimoroni/mopidy-raspberry-gpio) Support for reading GPIO pins for say, play/pause/skip feedback.
+- [Mopidy-MPD](https://github.com/mopidy/mopidy-mpd) Adds compatibility for MPD Clients.
 - [Mopidy-Spotify](https://github.com/mopidy/mopidy-spotify) If you have Spotify Premium you can use this to stream from it. Not covered in this doc.
 
 Mopidy-Local requires you to set a directory. Again go into your config and add
@@ -158,6 +159,22 @@ Add music files over SFTP and run `sudo mopidyctl local scan`. This will update 
 We can now connect to our pi by checking it's ip using `ip a` and typing that into our browser, including the port (default is 6680). You'll be able to see a list of web clients installed, I used Iris.
 
 From Iris, we can then select a song to play and connect speakers to the DAC and play the song
+
+## Mopidy MPD
+
+To setup Mopidy MPD, use the following config:
+
+```
+[mpd]
+enabled = true
+hostname = 127.0.0.1
+port = 6600
+```
+We are only looking to listen on local connections since this is a portable player. Most MPD clients assume port 6600 by default, so we'll enforce that here.
+
+You should be able to now install a client of your choice. You can test whether it is working by starting a song then using a command like `echo currentsong | nc localhost 6600`.
+
+You can also install `mpc` and use that to get a quick status command.
 
 # Mopidy GPIO Button Response
 
